@@ -1,8 +1,8 @@
-# Emergency Buffer Builder 🛡️
+# Emergency Buffer Builder 
 
 A comprehensive financial management application for students to track expenses, build emergency funds, and receive AI-powered financial advice.
 
-## 🌟 Features
+##  Features
 
 - **Transaction Tracking**: Track income and expenses across 10 categories
 - **Emergency Fund Management**: Build and manage your financial safety net with optional lock periods
@@ -11,7 +11,7 @@ A comprehensive financial management application for students to track expenses,
 - **Dashboard Analytics**: Comprehensive overview with spending trends and category breakdowns
 - **Risk Assessment**: Critical/Warning/Safe levels based on your financial health
 
-## 📋 Prerequisites
+##  Prerequisites
 
 Before you begin, ensure you have the following installed:
 
@@ -93,18 +93,7 @@ cd ..
 
 ### 5. Start Development Servers
 
-**Option A: Using startup script (Recommended)**
 
-Windows:
-```bash
-run-dev.bat
-```
-
-macOS/Linux:
-```bash
-chmod +x run-dev.sh
-./run-dev.sh
-```
 
 **Option B: Manual start**
 
@@ -189,7 +178,7 @@ npm run dev
 | `VITE_APP_NAME` | Application name | Emergency Buffer Builder | No |
 | `VITE_APP_VERSION` | Application version | 1.0.0 | No |
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ```
 emergency-buffer-builder/
@@ -227,7 +216,7 @@ emergency-buffer-builder/
 └── README.md              # This file
 ```
 
-## 🧪 Testing
+##  Testing
 
 ### Backend Tests
 
@@ -249,15 +238,8 @@ cd frontend
 npm run test
 ```
 
-## 📖 Documentation
 
-- **API Documentation**: See `backend/API.md`
-- **Authentication System**: See `backend/AUTH_SYSTEM.md`
-- **Chatbot Engine**: See `backend/services/CHATBOT_ENGINE.md`
-- **Setup Guide**: See `backend/SETUP.md`
-- **Quick Reference**: See `backend/QUICK_REFERENCE.md`
-
-## 🐛 Common Issues & Solutions
+##  Common Issues & Solutions
 
 ### Issue: CORS Error
 
@@ -376,7 +358,7 @@ localStorage.clear();
 window.location.href = '/login';
 ```
 
-## 🔒 Security Notes
+##  Security Notes
 
 ### Development
 - Default SECRET_KEY is for development only
@@ -399,24 +381,7 @@ window.location.href = '/login';
 
 6. **Setup token blacklist** for logout (see `backend/AUTH_SYSTEM.md`)
 
-## 🚀 Deployment
 
-### Backend (FastAPI)
-
-**Using Gunicorn:**
-```bash
-pip install gunicorn
-gunicorn main:app --workers 4 --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:8000
-```
-
-**Using Docker:**
-```dockerfile
-FROM python:3.11-slim
-WORKDIR /app
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-COPY . .
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
 ```
 
 ### Frontend (React + Vite)
@@ -427,28 +392,13 @@ cd frontend
 npm run build
 ```
 
-**Serve with nginx:**
-```nginx
-server {
-    listen 80;
-    server_name yourdomain.com;
-    
-    location / {
-        root /path/to/frontend/dist;
-        try_files $uri $uri/ /index.html;
-    }
-    
-    location /api {
-        proxy_pass http://localhost:8000;
-    }
-}
-```
 
-## 📝 License
+
+##  License
 
 MIT License - Built for students learning financial literacy.
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -456,25 +406,16 @@ MIT License - Built for students learning financial literacy.
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📧 Support
+##  Support
 
 ### Contact Information
 - **Founder**: Kirtan Jogani
 - **Email**: kirtanjogani3@gmail.com
 - **Phone**: +91-9374134341
-- **UPI**: emergencybuffer@paytm
 
-### Support Channels
-- **Email Support**: Response within 24 hours
-- **Phone Support**: 9 AM - 9 PM IST (Monday - Saturday)
-- **Documentation**: Check guides in project folders
-- **GitHub Issues**: For bug reports and feature requests
 
-For urgent issues (payment problems, account access):
-- Call: +91-9374134341
-- Email: kirtanjogani3@gmail.com
 
-## 🎓 Learning Resources
+##  Learning Resources
 
 - [FastAPI Documentation](https://fastapi.tiangolo.com/)
 - [React Documentation](https://react.dev/)
